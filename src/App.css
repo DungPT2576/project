@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #ecf0f1;
+  color: #000000;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.app {
+  padding-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecf0f1;
+  z-index: 1000; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.site-title {
+  font-size: 30px;
+  color: #110808;
+}
+
+.nav a {
+  margin-left: 30px;
+  color: #868686;
+  margin-right: 150px;
+  text-decoration: none;
+}
+
+.explore {
+  margin-top: -5px;
+  position: relative;
+}
+
+.featured-car {
+  position: relative;
+  width: 100%;
+  height: 475px; 
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.featured-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.featured-car:hover .featured-img {
+  transform: scale(1.1); 
+}
+
+.featured-car::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 1; 
+}
+
+.featured-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px; 
+  z-index: 2;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 500px;
+}
+
+.featured-info h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.featured-info p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.new-releases {
+  margin-top: 40px;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(70px);
+}
+
+.new-releases h2 {
+  color: #ecf0f1;
+  margin-bottom: 20px;
+}
+
+.car-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.car-card {
+  width: 30%;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.car-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.car-info {
+  padding: 5px;
+}
+
+.car-info h4 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: white;
+}
+
+.car-info p {
+  margin: 0;
+  color: #0097e6;
+}
+
+.events {
+  margin-top: 40px;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(70px);
+}
+
+.events h2 {
+  color: #ecf0f1;
+  margin-bottom: 20px;
+}
+
+.events-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-square, .event-rectangle {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-square:hover .event-img, .event-rectangle:hover .event-img {
+  transform: scale(1.1);
+}
+
+.event-square {
+  width: 40%;
+  height: 300px;
+}
+
+.event-rectangles {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-rectangle {
+  height: 145px;
+  margin-bottom: 10px;
+}
+
+.event-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  color: white;
+  text-align: center;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer-nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
